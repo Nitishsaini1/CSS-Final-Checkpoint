@@ -1,0 +1,462 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+    scroll-behavior: smooth ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+body{
+    background: #080808ea;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    font-size: 30px;
+    padding: 9px 0;
+    font-weight: 600;
+}
+.sub-title{
+    font-size: 40px;
+}
+.red{
+    color: #ff004f;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    /* background-color: #080808; */
+    background-image: url(./images/background-3.png);
+    background-size:cover ;
+    background-position: center;
+    
+}
+.container{
+    padding: 10px 10%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+.sub-menu{
+    display: flex;
+}
+.sub-menu li{
+    margin: 10px 20px ;
+}
+.sub-menu li a{
+    color: #ffff;
+    font-size: 18px;
+    position: relative;
+}
+
+.sub-menu a::after{
+    content: '';
+    width:  0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 1s;
+}
+
+.sub-menu a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text img{
+    width: 200px;
+    height: 200px;
+}
+
+/* about */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+    align-items: center;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+ }
+ 
+  .tab-titles{
+     margin: 20px 0 40px ;
+     /* display: flex; */
+} 
+  
+  .about-me{
+    /* padding: 20px 0 8px 8px ; */
+    margin: 10px  0 ;
+    font-size: 25px;
+
+  }
+
+  .tab-titles{
+    margin: 20px 0 40px ;
+    display: flex;
+    justify-content: center;
+} 
+ 
+  .tab-links{
+    margin: 20px 0 ;
+    font-size: 25px;
+    font-weight: 500;
+    color: #ff004f;
+
+}
+
+.tab-contents{
+    width: 20rem;
+    height: 20rem;
+     padding: 1rem 2rem;
+    border-radius: 10px;
+    margin: 40px 55px 25px 25px  ;
+     box-shadow: 8px 7px 14px 7px #f56c6c4a;
+     font-size: 1.2rem;
+    }
+    .tab-contents:hover{
+        transition: all 0.5s ease ;
+        transform:  translateY(-10px)  ;  
+               /* width: 22rem ; */
+         /* height: 22rem ; */
+        box-shadow: -13px -8px 16px 9px #f56c6c4a;
+ }
+.tab-contents ul li{
+    margin: 12px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    display: block;
+    font-size: 20px;
+}
+
+/*  projects  */
+
+
+#projects{
+    padding: 30px 0;
+    margin-bottom: 20px ;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 40px;
+margin-top: 40px  ;
+}
+.my-project{
+    background: #262626;
+    /* padding: 40px ; */
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px ;
+    box-shadow: 8px 11px 20px 8px black;
+    transition: background 1s, transform 0.5s;
+ }
+ .my-project-link {
+    display: flex;
+    justify-content: space-around;
+  border: 3px solid #4a4343;
+  border-radius: 5px ;
+ }
+ .my-project-link i{
+    display: flex;
+ }
+.my-project i{
+    color: white;
+  font-size: 30px ;
+  margin: 20px  30px ;
+  /* border: 6px solid #ababab; */
+  
+}
+.my-project h3{
+    font-size: 30px ;
+    font-weight: 500;
+    margin-bottom: 15px ;
+    padding: 30px 0 0 30px;
+}
+.my-project p{
+    font-size: 16px ;
+    font-weight: 300;
+    margin-bottom: 15px ;
+    padding: 30px 0 10px 30px;
+}
+
+.my-project:hover{
+     /* background-color: #e6226046; */
+    transform: translateY(-10px );
+}
+
+/* contact  */
+.row2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px ;
+}
+.social-icons a{
+    font-size: 30px ;
+    margin: 20px  15px 0 0;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px ;
+    color: white;
+    transition: background 0.5s;
+}
+ 
+.btn.btn2{
+ display: inline-block;
+ background: #ff004f;
+}
+
+.contact-right form{
+    width: 100%;
+}
+form input, textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px ;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px ;
+    font-size: 18px ;
+    margin-top: 20px;
+    /* cursor: pointer; */
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.copyright i{
+    color: #ff004f;
+}
+
+/* back to top  */
+.back-to-top{
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+}
+.back-to-top i{
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 4px;
+    z-index: 999999;
+}
+
+
+/*-----  media query -------*/
+ 
+.bars, .checkbox{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+   
+    .sub-title{
+        font-size: 25px;
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px ;
+
+    }
+    .header-text h1{
+        font-size: 30px ;
+    }
+    .menu i{
+        display: block ;
+        font-size: 25px ;
+    
+    }
+
+    
+    .sub-menu li{
+        display: block;
+        margin: 27px ;
+
+    }
+    .sub-menu i{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+     .about-me{
+        font-size: 16px ;
+     }
+     .my-project h3 {
+        font-size: 25px;
+        font-weight: 400;
+         padding: 15px 0px 0 30px;
+    }
+    .my-project p {
+        font-size: 15px;
+        font-weight: 300;
+        margin-bottom: 15px;
+        padding: 10px 20px 16px 30px;
+    }
+     
+    .row, .tab-titles{
+        display: block;
+    }
+    .row2{
+        justify-content: space-around;
+    }
+
+    /* ---nav bar  */
+  
+     .nav{
+        display: none;
+     }
+     
+    .sub-menu{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100%;
+        flex-wrap: wrap;
+        padding-top: 5rem;
+    }
+    
+    #toggle:checked ~ .nav{
+
+        display: inline-block;
+
+    }
+    .bars {
+        display: block;
+        font-size: 2.4rem;
+         z-index: 49;
+    }   
+}
+
+/* nav = menu  */
